@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp5
 {
@@ -15,6 +16,23 @@ namespace WindowsFormsApp5
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Directory.CreateDirectory("E:\\TEMPORALES\\NUEVO\\A");
+            Directory.CreateDirectory("E:\\TEMPORALES\\NUEVO\\B");
+            Directory.CreateDirectory("E:\\TEMPORALES\\NUEVO\\C");
+            Directory.CreateDirectory("E:\\TEMPORALES\\NUEVO\\D");
+            
+            Directory.Delete("E:\\TEMPORALES\\NUEVO\\D");
+
+            string[] archivos = Directory.GetDirectories("E:\\TEMPORALES\\NUEVO");
+            for (int i = 0; i < archivos.Length; i++)
+            {
+                listBox1.Items.Add(archivos[i]);
+            }
+
         }
     }
 }

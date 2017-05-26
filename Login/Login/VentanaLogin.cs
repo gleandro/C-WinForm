@@ -11,7 +11,7 @@ using Libreria;
 
 namespace Login
 {
-    public partial class VentanaLogin : Form
+    public partial class VentanaLogin : FormBase
     {
         public VentanaLogin()
         {
@@ -59,11 +59,6 @@ namespace Login
                 MessageBox.Show("ERROR : "+error.Message);
             }
 
-        }
-
-        private void btn_Salir_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void VentanaLogin_FormClosed(object sender, FormClosedEventArgs e)

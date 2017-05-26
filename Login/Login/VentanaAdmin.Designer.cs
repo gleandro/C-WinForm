@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Cerrar_Sesion = new System.Windows.Forms.Button();
             this.btn_Cambiar_Contra = new System.Windows.Forms.Button();
             this.btn_Administrar = new System.Windows.Forms.Button();
@@ -42,6 +41,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btn_Salir
+            // 
+            this.btn_Salir.Location = new System.Drawing.Point(368, 255);
+            this.btn_Salir.Size = new System.Drawing.Size(157, 42);
             // 
             // txt_Codigo
             // 
@@ -96,15 +100,6 @@
             this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 18;
             this.label1.Text = "Admin";
-            // 
-            // btn_Salir
-            // 
-            this.btn_Salir.Location = new System.Drawing.Point(368, 255);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(157, 42);
-            this.btn_Salir.TabIndex = 16;
-            this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
             // 
             // btn_Cerrar_Sesion
             // 
@@ -163,7 +158,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Cerrar_Sesion);
             this.Controls.Add(this.btn_Cambiar_Contra);
             this.Controls.Add(this.btn_Administrar);
@@ -172,6 +166,18 @@
             this.Text = "VentanaAdmin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VentanaAdmin_FormClosed);
             this.Load += new System.EventHandler(this.VentanaAdmin_Load);
+            this.Controls.SetChildIndex(this.btn_Principal, 0);
+            this.Controls.SetChildIndex(this.btn_Administrar, 0);
+            this.Controls.SetChildIndex(this.btn_Cambiar_Contra, 0);
+            this.Controls.SetChildIndex(this.btn_Cerrar_Sesion, 0);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.txt_Admin, 0);
+            this.Controls.SetChildIndex(this.txt_Usuario, 0);
+            this.Controls.SetChildIndex(this.txt_Codigo, 0);
+            this.Controls.SetChildIndex(this.btn_Salir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,7 +193,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Button btn_Cerrar_Sesion;
         private System.Windows.Forms.Button btn_Cambiar_Contra;
         private System.Windows.Forms.Button btn_Administrar;

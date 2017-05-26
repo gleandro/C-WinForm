@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btn_Iniciar = new System.Windows.Forms.Button();
-            this.btn_Salir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_usuario = new System.Windows.Forms.TextBox();
@@ -37,6 +36,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btn_Salir
+            // 
+            this.btn_Salir.Location = new System.Drawing.Point(203, 227);
+            this.btn_Salir.Size = new System.Drawing.Size(111, 34);
             // 
             // btn_Iniciar
             // 
@@ -47,16 +51,6 @@
             this.btn_Iniciar.Text = "iniciar";
             this.btn_Iniciar.UseVisualStyleBackColor = true;
             this.btn_Iniciar.Click += new System.EventHandler(this.btn_Iniciar_Click);
-            // 
-            // btn_Salir
-            // 
-            this.btn_Salir.Location = new System.Drawing.Point(220, 227);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(112, 34);
-            this.btn_Salir.TabIndex = 1;
-            this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // label1
             // 
@@ -113,11 +107,17 @@
             this.Controls.Add(this.txt_usuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Iniciar);
             this.Name = "VentanaLogin";
             this.Text = " ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VentanaLogin_FormClosed);
+            this.Controls.SetChildIndex(this.btn_Salir, 0);
+            this.Controls.SetChildIndex(this.btn_Iniciar, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.txt_usuario, 0);
+            this.Controls.SetChildIndex(this.txt_clave, 0);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -127,7 +127,6 @@
         #endregion
 
         private System.Windows.Forms.Button btn_Iniciar;
-        private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_usuario;

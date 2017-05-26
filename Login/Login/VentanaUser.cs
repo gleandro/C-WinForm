@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class VentanaUser : Form
+    public partial class VentanaUser : FormBase
     {
         public VentanaUser()
         {

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{ED6EA960-8F1E-4EE7-B3A8-84E2E2440D64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto", "Login\Proyecto.csproj", "{ED6EA960-8F1E-4EE7-B3A8-84E2E2440D64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria", "Libreria\Libreria.csproj", "{FF787FF2-B97F-40AA-BDC9-2748C3A0A13F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{ED6EA960-8F1E-4EE7-B3A8-84E2E2440D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED6EA960-8F1E-4EE7-B3A8-84E2E2440D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED6EA960-8F1E-4EE7-B3A8-84E2E2440D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF787FF2-B97F-40AA-BDC9-2748C3A0A13F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF787FF2-B97F-40AA-BDC9-2748C3A0A13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF787FF2-B97F-40AA-BDC9-2748C3A0A13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF787FF2-B97F-40AA-BDC9-2748C3A0A13F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

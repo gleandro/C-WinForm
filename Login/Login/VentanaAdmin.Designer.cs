@@ -54,6 +54,7 @@
             this.txt_Codigo.Name = "txt_Codigo";
             this.txt_Codigo.Size = new System.Drawing.Size(158, 20);
             this.txt_Codigo.TabIndex = 23;
+            this.txt_Codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_Usuario
             // 
@@ -62,6 +63,7 @@
             this.txt_Usuario.Name = "txt_Usuario";
             this.txt_Usuario.Size = new System.Drawing.Size(158, 20);
             this.txt_Usuario.TabIndex = 22;
+            this.txt_Usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_Admin
             // 
@@ -70,6 +72,7 @@
             this.txt_Admin.Name = "txt_Admin";
             this.txt_Admin.Size = new System.Drawing.Size(158, 20);
             this.txt_Admin.TabIndex = 21;
+            this.txt_Admin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -136,6 +139,7 @@
             this.btn_Principal.TabIndex = 12;
             this.btn_Principal.Text = "Contenedor Principal";
             this.btn_Principal.UseVisualStyleBackColor = true;
+            this.btn_Principal.Click += new System.EventHandler(this.btn_Principal_Click);
             // 
             // pictureBox1
             // 

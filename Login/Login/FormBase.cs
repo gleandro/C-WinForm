@@ -24,5 +24,30 @@ namespace Login
                 this.Close();
             }
         }
+
+        public virtual void Consultar()
+        {
+
+        }
+
+        public virtual void Eliminar()
+        {
+
+        }
+
+        public virtual void Nuevo()
+        {
+
+        }
+
+        public virtual Boolean Guardar()
+        {
+            return false;
+        }
+
+        private void FormBase_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
     }
 }

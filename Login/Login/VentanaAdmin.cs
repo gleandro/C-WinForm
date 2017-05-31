@@ -29,5 +29,12 @@ namespace Login
             txt_Codigo.Text = VentanaLogin.codigo.ToString();
             pictureBox1.Image = Image.FromFile(VentanaLogin.foto);
         }
+
+        private void btn_Principal_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal CP = new ContenedorPrincipal();
+            this.Hide();
+            CP.Show();
+        }
     }
 }

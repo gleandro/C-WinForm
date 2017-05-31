@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class FormBase
+    partial class ConsultarProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_Salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btn_Salir
+            // btn_Buscar
             // 
-            this.btn_Salir.Location = new System.Drawing.Point(102, 191);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(75, 23);
-            this.btn_Salir.TabIndex = 0;
-            this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
-            // FormBase
+            // ConsultarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(524, 370);
-            this.Controls.Add(this.btn_Salir);
-            this.Name = "FormBase";
-            this.Text = "FormBase";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormBase_FormClosed);
+            this.ClientSize = new System.Drawing.Size(691, 428);
+            this.Name = "ConsultarProducto";
+            this.Text = "ConsultarProducto";
+            this.Load += new System.EventHandler(this.ConsultarProducto_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        public System.Windows.Forms.Button btn_Salir;
     }
 }

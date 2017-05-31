@@ -103,5 +103,33 @@ namespace Login
                 childForm.Close();
             }
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MantenimientoCliente M_cli = new MantenimientoCliente();
+            M_cli.MdiParent = this;
+            M_cli.Show();
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MantenimientoProducto M_pro = new MantenimientoProducto();
+            M_pro.MdiParent = this;
+            M_pro.Show();
+        }
+
+        private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente C_cli = new ConsultarCliente();
+            C_cli.MdiParent = this;
+            C_cli.Show();
+        }
+
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarProducto C_pro = new ConsultarProducto();
+            C_pro.MdiParent = this;
+            C_pro.Show();
+        }
     }
 }

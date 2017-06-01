@@ -131,5 +131,12 @@ namespace Login
             C_pro.MdiParent = this;
             C_pro.Show();
         }
+
+        private void facturaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion Fact = new Facturacion();
+            Fact.MdiParent = this;
+            Fact.Show();
+        }
     }
 }

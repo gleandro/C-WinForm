@@ -86,6 +86,7 @@
             this.btn_Eliminar.TabIndex = 2;
             this.btn_Eliminar.Text = "Eliminar";
             this.btn_Eliminar.UseVisualStyleBackColor = true;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // btn_Clientes
             // 
@@ -95,6 +96,7 @@
             this.btn_Clientes.TabIndex = 3;
             this.btn_Clientes.Text = "Clientes";
             this.btn_Clientes.UseVisualStyleBackColor = true;
+            this.btn_Clientes.Click += new System.EventHandler(this.btn_Clientes_Click);
             // 
             // btn_Productos
             // 
@@ -104,6 +106,7 @@
             this.btn_Productos.TabIndex = 4;
             this.btn_Productos.Text = "Productos";
             this.btn_Productos.UseVisualStyleBackColor = true;
+            this.btn_Productos.Click += new System.EventHandler(this.btn_Productos_Click);
             // 
             // btn_Nuevos
             // 
@@ -113,6 +116,7 @@
             this.btn_Nuevos.TabIndex = 5;
             this.btn_Nuevos.Text = "Nuevos";
             this.btn_Nuevos.UseVisualStyleBackColor = true;
+            this.btn_Nuevos.Click += new System.EventHandler(this.btn_Nuevos_Click);
             // 
             // btn_Facturar
             // 
@@ -122,6 +126,7 @@
             this.btn_Facturar.TabIndex = 6;
             this.btn_Facturar.Text = "Facturar";
             this.btn_Facturar.UseVisualStyleBackColor = true;
+            this.btn_Facturar.Click += new System.EventHandler(this.btn_Facturar_Click);
             // 
             // txt_Cliente
             // 
@@ -172,6 +177,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(24, 269);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(728, 307);
             this.dataGridView1.TabIndex = 15;
             // 
@@ -296,6 +302,7 @@
             this.lbl_Total.Name = "lbl_Total";
             this.lbl_Total.Size = new System.Drawing.Size(96, 25);
             this.lbl_Total.TabIndex = 22;
+            this.lbl_Total.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button7
             // 

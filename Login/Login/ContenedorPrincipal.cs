@@ -51,7 +51,7 @@ namespace Login
 
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void CutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -137,6 +137,16 @@ namespace Login
             Facturacion Fact = new Facturacion();
             Fact.MdiParent = this;
             Fact.Show();
+        }
+
+        private void ContenedorPrincipal_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void ContenedorPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

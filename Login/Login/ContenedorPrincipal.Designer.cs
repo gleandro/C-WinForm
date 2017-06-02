@@ -336,7 +336,7 @@
             // facturaciónToolStripMenuItem
             // 
             this.facturaciónToolStripMenuItem.Name = "facturaciónToolStripMenuItem";
-            this.facturaciónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.facturaciónToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.facturaciónToolStripMenuItem.Text = "Facturación";
             this.facturaciónToolStripMenuItem.Click += new System.EventHandler(this.facturaciónToolStripMenuItem_Click);
             // 
@@ -454,6 +454,8 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "ContenedorPrincipal";
             this.Text = "ContenedorPrincipal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ContenedorPrincipal_FormClosed);
+            this.Load += new System.EventHandler(this.ContenedorPrincipal_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.toolStrip.ResumeLayout(false);
